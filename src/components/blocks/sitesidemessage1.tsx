@@ -5,7 +5,7 @@ const park = process.env.GATSBY_PARK;
 
 export const SiteWideMessage1Block = ({ node }) => {
   return(            
-      node.body?.value? (
+      node?.body?.value? (
         <div className="alert-box" dangerouslySetInnerHTML={{ __html: node.body.value }} />
       ) : (
          <div />
