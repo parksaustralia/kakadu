@@ -6,10 +6,30 @@
   max-width: 1570px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+}
+.photo {
+  display: inline-block;
+  width: 100%;
 }
 h1.page-title {
   margin-top: 0;
   margin-bottom: 0.5em;
+}
+.region-sidebar-first .menu-item {
+  display: block;
+  margin: 0;
+  padding-top: 0.2em;
+  list-style: none
+}
+.main-content-block ul{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
  @media only screen and (min-width: 1170px) {
   .region.region-breadcrumb + main {
@@ -27,7 +47,6 @@ h1.page-title {
      flex-direction: row;
  }
  main aside.layout-sidebar-first {
-     order: 1;
      flex: 0 1;
      flex-basis: 252px;
      box-sizing: border-box;
@@ -60,12 +79,6 @@ h1.page-title {
     list-style: none;
     border: none;
     border-bottom: 1px solid #C1C1C1;
-  
-    .region-sidebar-first nav .menu .menu-item {
-      display: block;
-      margin: 0;
-      padding: 0;
-    }
   }
   .region-sidebar-first nav > .menu > .menu-item > a:first-child {
     position: relative;
@@ -74,7 +87,7 @@ h1.page-title {
     color: black;
     border-top: none;
   }    
-  .region-sidebar-first nav .menu .menu-item > a {
+  .region-sidebar-first .menu-item > a {
     display: block;
     box-sizing: border-box;
     margin: 0;
